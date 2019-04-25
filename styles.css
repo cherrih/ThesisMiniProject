@@ -16,6 +16,7 @@ body {
 }
 :root {
   --main-green: rgb(157, 231, 180);
+  --main-green-hover: rgb(194, 224, 203);
   --main-purple: rgb(115, 114, 220);
   --bg-purple-one: rgb(116, 54, 205);
   --bg-purple-two: rgb(116, 78, 212);
@@ -26,6 +27,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+header a:hover {
+  border-bottom: 1px solid #fff;
 }
 header {
   display: flex;
@@ -38,6 +42,10 @@ header {
 .logo {
   font-weight: 600;
 }
+.logo:hover {
+  transform: scale(1.1);
+  border: none;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -45,7 +53,7 @@ header nav {
   width: 30vw;
 }
 header a {
-  padding-right: 25px;
+  margin-right: 25px;
 }
 .support {
   background-color: var(--main-green);
@@ -54,7 +62,11 @@ header a {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
-
+.support:hover {
+  border: none;
+  color: var(--main-green);
+  background-color: white;
+}
 .main {
   background: linear-gradient(170deg, var(--bg-purple-two) 48%, var(--main-purple) 48%, var(--main-purple) 64%, #fff 64%);
   padding-bottom: 20vh;
@@ -91,6 +103,11 @@ form input[type=submit] {
   height: 59px;
   margin-left: 5px;
 }
+form input[type=submit]:hover {
+  color: var(--main-green);
+  background-color: white;
+  cursor: pointer;
+}
 .learn {
   text-align: center;
   padding-top: 20vh;
@@ -108,7 +125,8 @@ form input[type=submit] {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .learn img:hover {
-  animation: bounce 2s infinite;
+  animation: bounce 2s;
+  cursor: pointer;
 }
 
 .create {
@@ -132,6 +150,11 @@ form input[type=submit] {
   padding: 5px 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   font-size: 14px;
+}
+.account:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: var(--main-purple);
 }
 .services {
   background: linear-gradient(170deg, #fff 58%, var(--bg-grey) 58%);
@@ -216,6 +239,11 @@ form input[type=submit] {
   font-size: 14px;
   margin-left: 1.5vw;
 }
+.contact-us:hover {
+  transform: scale(1.1);
+  color: #fff;
+  background-color: var(--main-text);
+}
 
 footer {
   background-color: var(--main-purple);
@@ -251,8 +279,4 @@ footer {
 }
 .address {
   display: flex;
-}
-
-.account:hover {
-  transform: translatey(-5px);
 }
