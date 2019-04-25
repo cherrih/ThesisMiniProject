@@ -2,7 +2,6 @@ body {
   font-family: 'Hind', sans-serif;
   color: #fff;
   margin: 0;
-  background: linear-gradient(168deg, var(--bg-purple-one) 10%, var(--bg-purple-two) 10%, var(--bg-purple-two) 40%, var(--main-purple) 40%, var(--main-purple) 80%, #fff 80%);
 }
 :root {
   --main-green: rgb(157, 231, 180);
@@ -19,9 +18,10 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 3vh 8vw;
-  height: 8vh;
-  width: 88vw;
+  padding: 3vh 9vw;
+  height: 14vh;
+  width: 82vw;  
+  background: linear-gradient(170deg, var(--bg-purple-one) 35%, var(--bg-purple-two) 35%);
 }
 .logo {
   font-weight: 600;
@@ -30,9 +30,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-}
-header nav div {
-  padding-right: 50px;
+  width: 30vw;
 }
 header a {
   padding-right: 25px;
@@ -44,6 +42,12 @@ header a {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
+
+.main {
+  background: linear-gradient(170deg, var(--bg-purple-two) 48%, var(--main-purple) 48%, var(--main-purple) 64%, #fff 64%);
+  padding-bottom: 20vh;
+}
+
 form {
   text-align:center;
 }
@@ -66,13 +70,13 @@ form input {
 form input[type=text] {
   width: 350px;
   padding-left: 20px;
-  height: 53px;
+  height: 57px;
 }
 form input[type=submit] {
   color: #fff;
   background-color: var(--main-green);
   width: 90px;  
-  height: 55px;
+  height: 59px;
   margin-left: 5px;
 }
 .learn {
@@ -82,10 +86,17 @@ form input[type=submit] {
 .learn h3 {
   font-weight: 300;
   font-size: 14px;
+  letter-spacing: 0.1em;
 }
 .learn img {
   background-color: var(--main-green);
   border-radius: 100%;
   height: 30px;
-  padding: 10px 11px;
+  padding: 14px 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.create p {
+  color: #000;
+  font-weight: 300;
 }
