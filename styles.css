@@ -231,3 +231,10 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+.col1 img {
+  height: 15px;
+  padding: 0 15px;
+}
+.address {
+  display: flex;
+}
