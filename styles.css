@@ -36,7 +36,6 @@ header {
   justify-content: space-between;
   padding: 3vh 10vw;
   height: 14vh;
-  width: 80vw;
   background: linear-gradient(170deg, var(--bg-purple-one) 35%, var(--bg-purple-two) 35%);
 }
 .logo {
@@ -50,7 +49,9 @@ header nav {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  width: 30vw;
+}
+header nav div {
+  padding-left: 20px;
 }
 header a {
   margin-right: 25px;
@@ -68,7 +69,7 @@ header a {
   background-color: white;
 }
 .main {
-  background: linear-gradient(170deg, var(--bg-purple-two) 48%, var(--main-purple) 48%, var(--main-purple) 64%, #fff 64%);
+  background: linear-gradient(170deg, var(--bg-purple-two) 46%, var(--main-purple) 46%, var(--main-purple) 67%, #fff 67%);
   padding-bottom: 20vh;
 }
 
@@ -92,7 +93,7 @@ form input {
   border-radius: 5px;
 }
 form input[type=text] {
-  width: 350px;
+  width: 26vw;
   padding-left: 20px;
   height: 57px;
 }
@@ -110,7 +111,7 @@ form input[type=submit]:hover {
 }
 .learn {
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 27vh;
 }
 .learn h3 {
   font-weight: 300;
@@ -253,11 +254,16 @@ form input[type=submit]:hover {
 footer {
   background-color: var(--main-purple);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 10vh 10vw;
   font-weight: 300;
   font-size: 14px;
   line-height: 2;
+  flex-wrap: wrap;
+}
+.col {
+  padding-right: 15px;
 }
 .footer-title {
   font-weight: 600;
@@ -296,4 +302,33 @@ footer {
 }
 footer img:hover {
   transform: scale(1.1);
+}
+
+/* --- Media Queries ---- */
+
+/* Tablet */
+@media (max-width: 768px){
+  footer {
+    font-size: 10px
+  }  
+  .footer-title {
+    font-size: 12px;
+  } 
+  .col1 {
+    padding-top: 0;
+  }
+  form input[type=text] {
+    width: 55vw;
+  }
+}
+
+/* Iphone X */
+@media (max-width: 375px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .col5 {
+    flex-direction: row;
+  }
 }
