@@ -10,6 +10,7 @@ body {
   --bg-purple-two: rgb(116, 78, 212);
   --bg-grey: rgb(246, 249, 252);
   --bg-grey-light: rgb(252, 252, 253);
+  --main-text: rgb(61, 62, 102);
 }
 a {
   text-decoration: none;
@@ -103,7 +104,7 @@ form input[type=submit] {
   padding-bottom: 10vh;
 }
 .create p {
-  color: #000;
+  color: var(--main-text);
   font-weight: 300;
   font-size: 22px;
   line-height: 1.4;
@@ -116,4 +117,45 @@ form input[type=submit] {
   padding: 5px 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   font-size: 14px;
+}
+
+.services {
+  color: var(--main-text);
+  text-align: center;
+  font-weight: 300;
+}
+.services:after {
+  content : "";
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom: 2px solid rgb(89, 90, 111);
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--main-text);
+}
+.services-element img {
+  width: 120px;
+  padding: 20px;
+}
+.services-element {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-grey-light);
+  border: 0.5px solid rgb(89, 90, 111);
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+}
+.services-element>div>p {
+  width: 300px;
+  margin: 0 20px 30px 0;
+  line-height: 1.1;
+}
+h4 {
+  margin: 30px 0 10px;
 }
