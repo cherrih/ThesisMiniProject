@@ -266,7 +266,8 @@ footer {
 .col5 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 .col5 img {
   width: 30px;
@@ -277,6 +278,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 7px;
+}
+.col1, .col5 {
+  padding-top: 7px;
 }
 .col1 img {
   height: 15px;
@@ -288,4 +293,7 @@ footer {
 .col>div:not(.footer-title):hover {
   cursor: pointer;
   font-weight: 400;
+}
+footer img:hover {
+  transform: scale(1.1);
 }
