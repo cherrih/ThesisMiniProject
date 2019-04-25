@@ -19,9 +19,9 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 3vh 9vw;
+  padding: 3vh 10vw;
   height: 14vh;
-  width: 82vw;  
+  width: 80vw;  
   background: linear-gradient(170deg, var(--bg-purple-one) 35%, var(--bg-purple-two) 35%);
 }
 .logo {
@@ -110,6 +110,7 @@ form input[type=submit] {
   line-height: 1.4;
 }
 .account {
+  text-align: center;
   background-color: var(--main-purple);
   width: 220px;
   margin: 4vh auto;
@@ -119,12 +120,14 @@ form input[type=submit] {
   font-size: 14px;
 }
 
-.services {
-  color: var(--main-text);
-  text-align: center;
+.services h2 {
   font-weight: 300;
+  color: var(--main-text);
 }
-.services:after {
+.our-services {
+  text-align: center;
+}
+.our-services:after {
   content : "";
   display: block;
   margin: 0 auto;
@@ -156,6 +159,45 @@ form input[type=submit] {
   margin: 0 20px 30px 0;
   line-height: 1.1;
 }
-h4 {
+.services h4 {
   margin: 30px 0 10px;
 }
+
+.ready {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 10vw;
+}
+.ready-left h2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 22px;
+}
+.ready-left h2:first-child {
+  color: var(--main-purple);
+}
+.ready-left h2:nth-child(2) {
+  color: var(--bg-purple-one);
+}
+.ready-left {
+  margin-top: 2.5vh;
+}
+.ready-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-us {
+  text-align: center;
+  color: var(--main-text);
+  width: 220px;
+  border-radius: 5px;
+  padding: 5px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  margin-left: 1.5vw;
+}
+
