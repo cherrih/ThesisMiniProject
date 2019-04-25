@@ -195,7 +195,7 @@ form input[type=submit] {
 .contact-us {
   text-align: center;
   color: var(--main-text);
-  width: 220px;
+  width: 140px;
   border-radius: 5px;
   padding: 5px 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -203,3 +203,31 @@ form input[type=submit] {
   margin-left: 1.5vw;
 }
 
+footer {
+  background-color: var(--main-purple);
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 10vw;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 2;
+}
+.footer-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.col5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.col5 img {
+  width: 30px;
+  padding: 0 20px 20px;
+}
+.col1 {
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
