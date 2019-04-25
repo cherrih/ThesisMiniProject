@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
   padding: 3vh 10vw;
   height: 14vh;
-  width: 80vw;  
+  width: 80vw;
   background: linear-gradient(170deg, var(--bg-purple-one) 35%, var(--bg-purple-two) 35%);
 }
 .logo {
@@ -151,13 +151,13 @@ form input[type=submit] {
   display: flex;
   flex-direction: row;
   background-color: var(--bg-grey-light);
-  border: 0.5px solid rgb(89, 90, 111);
+  border: 0.5px solid rgb(246, 246, 248);
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 15px;
   align-items: center;
 }
 .services-element>div>p {
-  width: 300px;
+  width: 26vw;
   margin: 0 20px 30px 0;
   line-height: 1.1;
 }
