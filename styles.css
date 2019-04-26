@@ -2,6 +2,7 @@ body {
   font-family: 'Hind', sans-serif;
   color: #fff;
   margin: 0;
+  width: 100vw;
 }
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {
@@ -309,10 +310,10 @@ footer img:hover {
 /* Tablet */
 @media (max-width: 768px){
   footer {
-    font-size: 10px
+    font-size: 10pt;
   }  
   .footer-title {
-    font-size: 12px;
+    font-size: 12pt;
   } 
   .col1 {
     padding-top: 0;
@@ -323,12 +324,92 @@ footer img:hover {
 }
 
 /* Iphone X */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
+  nav div:first-child {
+    display: none;
+  }
+  header a {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .support {
+    padding: 3px 12px;
+  }
+  form h1 {
+    font-size: 20pt;
+    width: 65vw;
+  }
+  form input[type=text] {
+    width: 62vw;
+    padding-left: 5px;
+    height: 32px;
+    font-size: 10pt;
+  }
+  form input[type=submit] {
+    width: 58px;
+    height: 34px;
+    font-size:10pt;
+  }
+  .ready {
+    flex-direction: column;
+  }
+  .ready-left h2:first-child {
+    text-align: center;
+    font-size: 13pt;
+  }
+  .ready-left h2:nth-child(2) {
+    display: none;
+  }
+  .ready-right {
+    flex-direction: column;
+  }
+  .create {
+    width: 70vw;
+    text-align: left;
+  }
+  .create p {
+    font-size: 12pt;
+  }
+  .account {
+    font-size: 10pt;
+    width: 45vw;
+    padding: 5px;
+  }
+  .contact-us {
+    width: 45vw;
+    padding: 5px;
+    font-size: 10pt;
+    margin-left: 0;
+  }
+  .services-element {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .services-element>div>p {
+    font-size: 12pt;
+    margin: 0 20px 20px 20px;
+    width: inherit;
+  }
+  .services h4 {
+    margin: 0 20px 5px;
+  }
+  .services-element img {
+    width: 90px;
+  }
   footer {
     flex-direction: column;
     justify-content: space-evenly;
   }
   .col5 {
     flex-direction: row;
+  }
+  .col1 img {
+    height: 12px;
+    padding: 0 5px 0 0;
+  }
+  .col {
+    padding-bottom: 10px;
+    line-height: 1.9;
   }
 }
